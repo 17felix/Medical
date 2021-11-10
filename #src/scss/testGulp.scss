@@ -1,0 +1,50 @@
+.test-fonts {
+  font-size: 50px;
+
+
+		// .test-fonts__UniNeueBlack-Italic
+
+		&__UniNeueBlack-Italic {
+      font-family: "UniNeueBlack-Italic";
+		}
+
+		// .test-fonts__UniNeueBook-Italic
+
+		&__UniNeueBook-Italic {
+      font-family: "UniNeueBook-Italic";
+		}
+
+		// .test-fonts__UniNeueHeavy-Italic
+
+		&__UniNeueHeavy-Italic {
+      font-family: "UniNeueHeavy-Italic";
+		}
+
+		// .test-fonts__UniNeueLight-Italic
+
+		&__UniNeueLight-Italic {
+      font-family: "UniNeueLight-Italic";
+		}
+
+		// .test-fonts__UniNeueRegular-Italic
+
+		&__UniNeueRegular-Italic {
+      font-family: "UniNeueRegular-Italic";
+		}
+
+		// .test-fonts__UniNeueThin-Italic
+
+		&__UniNeueThin-Italic {
+      font-family: "UniNeueThin-Italic";
+		}
+}
+.testGulp-testWebpcss {
+  width: 200px;
+  height: 200px;
+  // background: url("../img/recomm_prune-bgr.png") no-repeat center
+	background: red;
+}
+.testGulp-testWebphtml {
+  max-width: 300px;
+  border-radius: 5px;
+}

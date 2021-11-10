@@ -1,0 +1,57 @@
+$margin: 50px;
+$margin-s: 25px;
+$color1: rgb(0,118,192);
+$color1h: rgba(0, 118, 192, 0.8);
+$color1f: rgba(0, 118, 192, 0.5);
+$color2: rgb(91,86,91);
+$color2h: rgba(91, 86, 91, 0.8);
+$blink: 0.1s;
+$h1size: 36px; 
+$fz: 18px;
+// === / Variables ===
+
+
+ul, li {
+  list-style: none;
+  margin: 0;padding: 0;
+}
+a {
+  text-decoration: none;
+  color: $color2;
+  transition: 0.1s;
+}
+a:hover {
+  transition: 0.1s;
+  color: $color1;
+}
+body {
+  font-size: $fz;
+  background: $color1f;  
+  // background: linear-gradient(180deg, rgba(238,174,202,0) 15%, $color1 100%);  
+  background-repeat: no-repeat;
+  
+
+}
+// === /Reset === 
+
+.btn-link {
+  font-size: $h1size;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: rgba(255, 255, 255, 0.2) 2px solid;
+  outline: none;
+  // background: $color1h;
+  // margin: 20px;
+  // gap: 10px;
+  color: rgb(255, 255, 255);
+
+  &:hover {
+    border: #fff 2px solid;
+    color: #fff;
+    transform: translateY(-2px);
+  }
+}
+// -- Templates -- 
+
+
+// === /Header === 
