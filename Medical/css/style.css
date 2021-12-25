@@ -2,6 +2,10 @@ body {
   color: #0A143A;
 }
 
+/* neutral */
+
+/* fonts */
+
 ul,
 li {
   list-style: none;
@@ -11,7 +15,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #5b565b;
+  color: #336cfb;
   -webkit-transition: 0.1s;
   -o-transition: 0.1s;
   transition: 0.1s;
@@ -21,17 +25,18 @@ a:hover {
   -webkit-transition: 0.1s;
   -o-transition: 0.1s;
   transition: 0.1s;
-  color: #0076c0;
+  color: #336cfb;
 }
 
 body {
-  font-size: 18px;
-  background: rgba(0, 118, 192, 0.5);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  background: #e5e5e5;
   background-repeat: no-repeat;
 }
 
 .btn-link {
-  font-size: 36px;
+  font-size: 15px;
   padding: 10px 20px;
   border-radius: 5px;
   border: rgba(255, 255, 255, 0.2) 2px solid;
