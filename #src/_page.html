@@ -46,6 +46,38 @@
   <!-- /.sidebar -->
 
   <!-- @@include('_main.html') -->
-  
-  @@include('_appointments.html')
+    <!-- @@include('_appointments.html') -->
+    <!-- @@include('_nav.html') -->
+    <nav class="nav">
+      <!-- <div class="container nav-container"> -->
+        <nav class="navbar navbar-light bg-light">
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </nav>
+    </nav>
+    <!-- /.nav -->
+
+    
+    
+    <main class="main appointments">
+      <h2 class="main__title appointments__title">Appointments</h2>
+      <div class="container main-container appointments-container">
+        <div class="card main-card">
+          <img src="img/appointments/i-appointment.svg" alt="card1" class="card-img">
+          <span class="card__title">Make an appointment</span>
+        </div>
+        <div class="card main-card">
+          <img src="img/appointments/i-cardiology.svg" alt="card2" class="card-img">
+          <span class="card__title">Covid vaccine</span>
+        </div>
+        <div class="card main-card">
+          <img src="img/appointments/i-call_doctor.svg" alt="card3" class="card-img">
+          <span class="card__title">Doctor to home</span>
+        </div>
+      </div>
+    </main>
+    <!-- /.main -->
+
 </div>
