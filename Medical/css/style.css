@@ -105,6 +105,18 @@ h2 {
   width: 256px;
   height: 100%;
   overflow: hidden;
+  -webkit-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.sidebar:hover {
+  -webkit-box-shadow: 4px 0px 16px rgba(16, 30, 115, 0.08);
+          box-shadow: 4px 0px 16px rgba(16, 30, 115, 0.08);
+}
+
+.sidebar:hover .menu-item--divider {
+  border-top: 1px solid #a9c1fd;
 }
 
 .siedbar-subcontainer {
@@ -226,7 +238,8 @@ h2 {
 }
 
 .search-term {
-  width: 350px;
+  max-width: 350px;
+  width: 30vw;
   border: 2px solid transparent;
   border-right: none;
   border-radius: 25px;
