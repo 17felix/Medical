@@ -418,6 +418,7 @@ h2 {
   background: $cl--neutral-white;
   text-align: center;
   transition: all 0.1s;
+  border-radius: 8px;
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
 
@@ -456,4 +457,17 @@ h2 {
 }
 .card__title {
   // padding: 20px;
+}
+
+
+// ========== Departments ==========
+
+.main-card-l {
+  width: 350px;
+}
+.card-img-l {
+  width: 350px;
+  border-radius: 8px;
+  padding: 0;
+  margin: 0;
 }
