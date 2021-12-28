@@ -1,83 +1,57 @@
 <div class="page-container">
-  <!-- @@include('_sidebar.html') -->
-  <aside class="sidebar">
-    <div class=" sidebar-container">
-      <div class="siedbar-subcontainer">
-        <a href="#" class="logo">
-          <i class="fas fa-capsules logo__img"></i>
-          <span class="logo__txt">Healthcare</span>
-        </a>
-        <span class="subtitle sidebar-subtitle">MEDICINE</span>
-      </div>
-      <ul class="menu sidebar-menu">
-        <li class="menu-item">
-          <a href="#" class="menu-link">
-            <i class="fas fa-stethoscope"></i>
-            <span class="menu-link__txt">Appointments</span>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a href="#" class="menu-link">
-            <i class="fas fa-user-md"></i>
-            <span class="menu-link__txt">Doctors</span>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a href="#" class="menu-link">
-            <i class="fas fa-user-nurse"></i>
-            <span class="menu-link__txt">Departments</span>
-          </a>
-        </li>
-        <li class="menu-item menu-item--m m">
+  <div class="row">
+    <!-- @@include('_sidebar.html') -->
+    <aside class="sidebar col-2">
+      <div class=" sidebar-container ">
+        <div class="siedbar-subcontainer">
           <a href="#" class="logo">
             <i class="fas fa-capsules logo__img"></i>
             <span class="logo__txt">Healthcare</span>
           </a>
-        </li>
-        <li class="menu-item menu-item--divider">
-          <a href="#" class="menu-link ">
-            <i class="fas fa-question-circle"></i>
-            <span class="menu-link__txt">Help</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </aside>
-  <!-- /.sidebar -->
-
-  <!-- @@include('_main.html') -->
-    <!-- @@include('_appointments.html') -->
-    <!-- @@include('_nav.html') -->
-    <nav class="nav">
-      <!-- <div class="container nav-container"> -->
-        <nav class="navbar navbar-light bg-light">
-          <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </nav>
-    </nav>
-    <!-- /.nav -->
-
-    
-    
-    <main class="main appointments">
-      <h2 class="main__title appointments__title">Appointments</h2>
-      <div class="container main-container appointments-container">
-        <div class="card main-card">
-          <img src="img/appointments/i-appointment.svg" alt="card1" class="card-img">
-          <span class="card__title">Make an appointment</span>
+          <span class="subtitle sidebar-subtitle">MEDICINE</span>
         </div>
-        <div class="card main-card">
-          <img src="img/appointments/i-cardiology.svg" alt="card2" class="card-img">
-          <span class="card__title">Covid vaccine</span>
-        </div>
-        <div class="card main-card">
-          <img src="img/appointments/i-call_doctor.svg" alt="card3" class="card-img">
-          <span class="card__title">Doctor to home</span>
-        </div>
+        <ul class="menu sidebar-menu">
+          <li class="menu-item">
+            <a href="#" class="menu-link">
+              <i class="fas fa-stethoscope"></i>
+              <span class="menu-link__txt">Appointments</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">
+              <i class="fas fa-user-md"></i>
+              <span class="menu-link__txt">Doctors</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">
+              <i class="fas fa-user-nurse"></i>
+              <span class="menu-link__txt">Departments</span>
+            </a>
+          </li>
+          <li class="menu-item menu-item--m m">
+            <a href="#" class="logo">
+              <i class="fas fa-capsules logo__img"></i>
+              <span class="logo__txt">Healthcare</span>
+            </a>
+          </li>
+          <li class="menu-item menu-item--divider">
+            <a href="#" class="menu-link ">
+              <i class="fas fa-question-circle"></i>
+              <span class="menu-link__txt">Help</span>
+            </a>
+          </li>
+        </ul>
       </div>
+    </aside>
+    <!-- /.sidebar -->
+
+    <!-- @@include('_main.html') -->
+    <main class="main">
+      @@include('_appointments.html')
     </main>
-    <!-- /.main -->
+  </div>
+  
 
 </div>
+<!-- /.page -->
