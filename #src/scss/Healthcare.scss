@@ -16,7 +16,7 @@ $cl--neutral-gray-lighter: rgba(219, 221, 224, 1);
 $cl--neutral-gray-divider: rgba(232, 232, 232, 1);
 $cl--neutral-white: rgb(255, 255, 255);
 
-$cl--neutral-bg: rgba(229, 229, 229, 1);
+$cl--neutral-bg: rgb(229, 229, 229);
 
 /* fonts */
 $fz-h1: 56px; 
@@ -54,12 +54,12 @@ button {
 }
 
 a {
-  color: $cl--neutral-gray-light;
+  // color: $cl--neutral-gray-light;
   transition: 0.1s;
 }
 a:hover {
   transition: 0.1s;
-  color: $cl--primary;
+  // color: $cl--primary;
 }
 body {
   background: $cl--neutral-bg;  
@@ -202,6 +202,7 @@ h2 {
 }
 .menu-link {
   margin-left: 25px;
+  transition: all 0.1s;
 
 		// .menu-link__img
 
@@ -215,13 +216,21 @@ h2 {
       font-size: $fz-body1;
       font-weight: bold;
 		}
+		&__icon {
+      margin-right: 5px;
+      color: $cl--neutral-gray-light;
+		}
 
-    &:hover, &:hover &__txt {
+    &:hover, &:hover &__txt, &:hover &__icon {
       color: $cl--primary;
+      transition: all 0.1s;
     }
     &:active, &:active &__txt {
       color: $cl--primary-dark;
     }
+}
+.active > i, .active > span {
+  color: $cl--primary;
 }
 .m {
   display: none;
@@ -338,10 +347,10 @@ h2 {
 .appointments-container {
 }
 .main__title {
-
+  margin-bottom: 40px;
 }
 .appointments__title {
-  margin-bottom: 40px;
+  
 }
 .cards {
   display: flex;
@@ -361,6 +370,7 @@ h2 {
   min-height: 200px;
   width: 255px;
   // margin-right: 30px;
+  margin: 15px 0;
   margin-right: 30px;
   background: $cl--neutral-white;
   text-align: center;
@@ -389,28 +399,61 @@ h2 {
   font-weight: bold;
 }
 .card__title {
-  padding: 20px;
-  
 }
 
 
 
-// ===============
-// Styles for wrapping the search box 
-// Bootstrap 4 text input with search icon
-
-.has-search .form-control {
-  padding-left: 2.375rem;
+// =============== Doctors ============
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.has-search .form-control-feedback {
-  position: absolute;
-  z-index: 2;
-  display: block;
-  width: 2.375rem;
-  height: 2.375rem;
-  line-height: 2.375rem;
+.main-card {
+  flex-direction: column;
+  min-height: 200px;
+  width: 255px;
+  // margin-right: 30px;
+  margin-right: 30px;
+  background: $cl--neutral-white;
   text-align: center;
-  pointer-events: none;
-  color: #aaa;
+  transition: all 0.1s;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    border-top: 2px solid $cl--primary-light;
+    border-bottom: 2px solid $cl--primary-light;
+    box-shadow: 4px 0px 16px rgba(16, 30, 115, 0.08);
+  }
+  &:active {
+    border-top: 2px solid $cl--primary;
+    border-bottom: 2px solid $cl--primary;
+    box-shadow: 4px 0px 16px rgba(16, 30, 115, 0.08);
+  }
+}
+.main-card-person {
+}
+.card-img {
+  font-size: 75px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.card-img-person {
+  width: 200px;
+  border-radius: 50%;
+}
+.card-txt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 20px;
+}
+.card__subtitle {
+  margin: 5px;
+}
+.card__title {
+  // padding: 20px;
 }
