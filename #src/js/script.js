@@ -1,4 +1,5 @@
 @@include('accordion.js')
+@@include('popup.js')
 
 /*
 @@include('font-style.js')
