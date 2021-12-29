@@ -536,6 +536,7 @@ input:checked ~ .accordion-content{
   max-height:200px;
 }
 
+
 // ========== Profile ==========
 
 body.no-scroll {
@@ -546,13 +547,13 @@ h3 {
   font-size: $fz-h3;
   font-weight: bold;
 }
-.intro {
-  display: flex;
-  flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
-  height: 100vh;
-}
+// .intro {
+//   display: flex;
+//   flex-direction: column;
+//   // justify-content: center;
+//   // align-items: center;
+//   height: 100vh;
+// }
 
 .button {
   border: none;
@@ -600,7 +601,7 @@ h3 {
   pointer-events: all;
 }
 
-.popup  {
+.popup {
   padding: 40px;
   max-width: 380px;
   width: 100%;
@@ -610,8 +611,6 @@ h3 {
   transform: translate(-50%, -50%);
   background-color: $cl--neutral-white;
   border-radius: 15px;
-
-
 }
 .profile-info  {
   position: relative;
@@ -627,7 +626,7 @@ h3 {
     margin-bottom: 20px;
   }
 }
-.popup-form-inputs {
+.popup-form-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -697,16 +696,11 @@ h3 {
 
   &:focus {
     border: 1px solid #000000;
-    
-  
-    
   }
-  
-
 }
 
 // -------- input ----------
-@import url('https://rsms.me/inter/inter.css');
+// @import url('https://rsms.me/inter/inter.css');
 
 :root {
   --size-bezel: .5rem;
@@ -716,7 +710,7 @@ h3 {
   
   font-size: calc(.6rem + .4vw);
   font-weight: 300;
-  padding: 0 calc(var(--size-bezel) * 3);
+  //padding: 0 calc(var(--size-beze l) * 3);
 }
 
 .input {
@@ -767,4 +761,50 @@ h3 {
       }
     }
   }
+}
+
+
+
+// --------- appointements popup ----------------
+.popup {
+  padding: 80px;
+  max-width: 60vw;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $cl--neutral-white;
+  border-radius: 15px;
+}
+.appointmnets-popup-form-content {
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.appointments-popup-form__title {
+
+}
+.dropdown {
+  border: 3px solid $cl--neutral-gray;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 4px;
+  color: $cl--neutral-gray;
+  transition: 0.1 all;
+  color: $cl--primary;
+  
+  &:hover {
+    border: 3px solid $cl--primary-light;
+    color: $cl--primary;
+  }
+  &:focus, &:active, &:not(:option-shown) {
+    border: 3px solid $cl--primary;
+    color: $cl--primary;
+  }
+}
+.dropdwon-option {
 }

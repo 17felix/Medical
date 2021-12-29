@@ -1,6 +1,7 @@
 @@include('accordion.js')
 @@include('popup_login.js')
 @@include('popup_sigin.js')
+@@include('popup_appointment.js')
 
 /*
 @@include('font-style.js')
