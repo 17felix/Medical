@@ -5,39 +5,41 @@ for (let i = 0; i < accordion.length; i++) {
     this.classList.toggle('active')
   })
 }
-let popup = document.querySelector(".popup-wrapper");
-let popupForm = document.querySelector(".popup-form");
-let popupBtn = document.querySelector(".btn-popup--open");
-let popupClose = document.querySelector(".btn-popup--close");
+// == Authorization popup
+// -- Login
+let popupLogin = document.querySelector(".popup-wrapper--login");
+let popupFormLogin = document.querySelector(".popup-form--login");
+let popupBtnLogin = document.querySelector(".btn-popup--open-login");
+let popupCloseLogin = document.querySelector(".btn-popup--close-login");
 
-popupBtn.addEventListener("click", (e) => {
+popupBtnLogin.addEventListener("click", (e) => {
   e.preventDefault;
-  showPopup();
+  showPopupLogin();
 });
 
-popupClose.addEventListener("click", (e) => {
+popupCloseLogin.addEventListener("click", (e) => {
   e.preventDefault;
-  removePopup();
+  removePopupLogin();
 });
 
-popupForm.addEventListener("submit", () => {
-  removePopup();
+popupFormLogin.addEventListener("submit", () => {
+  removePopupLogin();
 });
 
-popup.addEventListener("click", (e) => {
+popupLogin.addEventListener("click", (e) => {
   let target = e.target;
   if (target.classList.contains("popup-wrapper")) {
-    removePopup();
+    removePopupLogin();
   } else return;
 });
 
-function showPopup() {
-  popup.classList.add("active");
+function showPopupLogin() {
+  popupLogin.classList.add("active");
   bodyScroll();
 }
 
-function removePopup() {
-  popup.classList.remove("active");
+function removePopupLogin() {
+  popupLogin.classList.remove("active");
   bodyScroll();
 }
 
@@ -45,6 +47,44 @@ function bodyScroll() {
   document.body.classList.toggle("no-scroll");
 }
 
+
+
+// -- Sigin
+let popupSigin = document.querySelector(".popup-wrapper--sigin");
+let popupFormSigin = document.querySelector(".popup-form--sigin");
+let popupBtnSigin = document.querySelector(".btn-popup--open-sigin");
+let popupCloseSigin = document.querySelector(".btn-popup--close-sigin");
+
+popupBtnSigin.addEventListener("click", (e) => {
+  e.preventDefault;
+  showPopupSigin();
+});
+
+popupCloseSigin.addEventListener("click", (e) => {
+  e.preventDefault;
+  removePopupSigin();
+});
+
+popupFormSigin.addEventListener("submit", () => {
+  removePopupSigin();
+});
+
+popupSigin.addEventListener("click", (e) => {
+  let target = e.target;
+  if (target.classList.contains("popup-wrapper")) {
+    removePopupSigin();
+  } else return;
+});
+
+function showPopupSigin() {
+  popupSigin.classList.add("active");
+  bodyScroll();
+}
+
+function removePopupSigin() {
+  popupSigin.classList.remove("active");
+  bodyScroll();
+}
 
 /*
 // alert('Hello Gulp!');

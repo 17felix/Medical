@@ -600,7 +600,7 @@ h3 {
   pointer-events: all;
 }
 
-.popup {
+.popup  {
   padding: 40px;
   max-width: 380px;
   width: 100%;
@@ -610,6 +610,15 @@ h3 {
   transform: translate(-50%, -50%);
   background-color: $cl--neutral-white;
   border-radius: 15px;
+
+
+}
+.profile-info  {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translate(0%, 0%);
+  margin-bottom: 100px;
 }
 
 .popup-form {
@@ -629,7 +638,7 @@ h3 {
   &--close {
     position: absolute;
     top: 0;
-    right: 10px;
+    right: 15px;
     background: none;
     border: none;
     padding: 0;
@@ -706,7 +715,6 @@ h3 {
   line-height: 1.4;
   
   font-size: calc(.6rem + .4vw);
-  color: var(--color-text);
   font-weight: 300;
   padding: 0 calc(var(--size-bezel) * 3);
 }
@@ -716,6 +724,7 @@ h3 {
   margin: 10px 0;
   // padding: 12px 20px;
   // margin: 10px 0;
+  cursor: text;
   
   &__label {
     position: absolute;
@@ -745,7 +754,11 @@ h3 {
     border-radius: var(--size-radius);
     outline-color: $cl--primary;
     // outline: none;
-    
+    transition: 0.1s;
+
+    &:hover {
+      border: 3px solid $cl--neutral-gray-dark;
+    }
     &:focus,
     &:not(:placeholder-shown) {
       & + .input__label {
