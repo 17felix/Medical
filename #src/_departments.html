@@ -1,7 +1,7 @@
 @@include('_nav.html')
 <div class="container main-container departments-container row">
   <h2 class="main__title departments__title">Departments</h2>
-  <div class="cards departments-cards">
+  <div class="cards departments-cards btn-popup--open-login">
     <div class="card main-card main-card-l">
       <img src="img/departments/neirology.jpg" alt="card3" class="card-img card-img-l">
       <div class="card-txt">
@@ -23,6 +23,32 @@
       </div>
     </div>
     <!-- main-card L(large) -->
+
+
+
+    <div class="popup-wrapper popup-wrapper--login overflow">
+      <div class="popup departments-popup">
+        <button class="btn-popup btn-popup--close btn-popup--close-login"></button>
+        <form class="popup-form popup-form--login">
+          <h3 class="popup-form__title appointments-popup-form__title">Make an appointment</h3>
+          <div class="popup-form-content appointmnets-popup-form-content">
+            <img src="img/departments/neirology.jpg" alt="card3" class="card-img card-img-l card-img-xl">
+            <div class="popup-comments departments-popup-comments">
+              <div class="comment departments-popup-comment">
+                <h6 class="comment__txt comment__author">Savantha Miles</h6>
+                <span class="comment__txt comment__date">Oct 4, 2021 9:14 AM</span>
+                <span class="comment__txt comment__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi inventore facere nobis est et. Laboriosam maxime, quas accusamus aliquid libero, corporis veniam odio ea consequuntur dicta sed explicabo saepe ratione.</span>
+                <textarea class="comment__txt comment__reply" name="text" placeholder="Enter your comment"></textarea>
+              </div>
+
+            </div>
+          </div>
+          <button type="submit" class="button btn-popup btn-popup--submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  <!-- /.popup--departments -->
+
   </div>
 </div>
 <!-- /.main departments -->
