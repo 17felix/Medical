@@ -140,7 +140,7 @@ h2 {
 
 // === /Main === 
 
-// @import 'appointments';
+// @import 'menu';
 
 //-- /sidebar -- 
 .sidebar {
@@ -351,16 +351,16 @@ h2 {
   }
 }
 
-// ================== appointments =====================
+// ================== menu =====================
 .main-container {
   margin-top: 40px;
 }
-.appointments-container {
+.menu-container {
 }
 .main__title {
   margin-bottom: 40px;
 }
-.appointments__title {
+.menu__title {
 }
 .cards {
   display: flex;
@@ -368,7 +368,7 @@ h2 {
   // justify-content: space-between;
   flex-wrap: wrap;
 }
-.appointments-cards {
+.menu-cards {
 }
 .card {
   display: flex;
@@ -413,7 +413,7 @@ h2 {
 
 
 
-// =============== Doctors ============
+// =============== about ============
 .card {
   display: flex;
   align-items: center;
@@ -471,7 +471,7 @@ h2 {
 }
 
 
-// ========== Departments ==========
+// ========== deliveries ==========
 
 .main-card-l {
   width: 350px;

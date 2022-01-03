@@ -1,19 +1,19 @@
-// === /appointments === 
+// === /menu === 
 
 @import 'sidebar';
 
 
 
-// =============== Appointments ============
+// =============== menu ============
 .main-container {
   margin-top: 40px;
 }
-.appointments-container {
+.menu-container {
 }
 .main__title {
   margin-bottom: 40px;
 }
-.appointments__title {
+.menu__title {
 }
 .cards {
   display: flex;
@@ -21,7 +21,7 @@
   // justify-content: space-between;
   flex-wrap: wrap;
 }
-.appointments-cards {
+.menu-cards {
 }
 .card {
   display: flex;

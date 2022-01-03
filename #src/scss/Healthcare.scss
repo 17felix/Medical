@@ -132,8 +132,8 @@ h2 {
 		&__img {
       display: flex;
       align-items: center;
-      border: 2px solid;
-      padding: 6px 5px;
+      // border: 2px solid;
+      // padding: 5px 5px;
       border-radius: 50%;
 
       @media (max-width: 767px) {
@@ -179,9 +179,8 @@ h2 {
 
 
 @import 'main';
-@import 'appointments';
-@import 'doctors';
-@import 'departments';
+@import 'menu';
+@import 'about';
 @import 'help';
 @import 'profile';
 @import 'popups';
