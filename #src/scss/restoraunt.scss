@@ -7,6 +7,10 @@
 
 .main-card-l {
   width: 350px;
+
+  &--menu {
+    
+  }
 }
 .card-img-l {
   width: 350px;
@@ -17,4 +21,9 @@
   border-radius: 8px;
   padding: 0;
   margin: 0;
+
+  // card-img-l--menu
+  &--menu {
+    height: 250px;
+  }
 }

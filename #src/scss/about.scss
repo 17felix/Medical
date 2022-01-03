@@ -19,14 +19,12 @@
   text-align: center;
   transition: all 0.1s;
   border-radius: 8px;
-  border-top: 2px solid transparent;
-  border-bottom: 2px solid transparent;
 
   &:hover {
-    box-shadow: 4px 0px 16px rgba(0, 0, 0, 0.08);
+    box-shadow: 4px 2px 20px rgba(0, 0, 0, 0.08);
   }
   &:active {
-    box-shadow: 4px 0px 16px rgba(0, 0, 0, 0.08);
+    box-shadow: 4px 2px 20px rgba(0, 0, 0, 0.185);
   }
 }
 .main-card-person {
@@ -51,9 +49,14 @@
   flex-direction: column;
 
   padding: 20px;
+
+  &--menu {
+    justify-content: unset;
+  }
 }
 .card__subtitle {
   margin: 5px;
+  font-size: 14px;
 }
 .card__title {
   // padding: 20px;
