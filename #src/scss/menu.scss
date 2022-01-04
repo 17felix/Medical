@@ -18,7 +18,7 @@
 .cards {
   display: flex;
   align-items: center;
-  // justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .menu-cards {
@@ -42,14 +42,10 @@
   border-bottom: 2px solid transparent;
 
   &:hover {
-    border-top: 2px solid $cl--primary-light;
-    border-bottom: 2px solid $cl--primary-light;
-    box-shadow: 4px 0px 16px rgba(16, 30, 115, 0.08);
+    // box-shadow: 4px 0px 16px rgba(16, 30, 115, 0.08);
   }
   &:active {
-    border-top: 2px solid $cl--primary;
-    border-bottom: 2px solid $cl--primary;
-    box-shadow: 4px 0px 16px rgba(16, 30, 115, 0.08);
+    // box-shadow: 4px 0px 16px rgba(16, 30, 115, 0.08);
   }
 }
 .card-img {
