@@ -1,0 +1,83 @@
+
+@media (max-width: 767px) {
+  body {
+    // background: rgb(255, 194, 194);
+  }
+  .menu-link__txt, .card__subtitle, .accordion-content p, .input__label {
+    font-size: 11px;
+  }
+  .accordion-faq, .button {
+    font-size: 14px;
+    padding: 12px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .main__title {
+    margin-bottom: 20px;
+  }
+  .menu-link, .siedbar-subcontainer {
+    margin-left: 15px;
+  }
+  .main-card {
+    width: 120px;
+    min-height: 120px;
+  }
+  .card-txt {
+    // margin: 0 5px;
+    padding: 10px 5px;
+  }
+  .card__title {
+    font-size: 12px;
+  }
+  .card-img {
+    font-size: 30px;
+    margin: 0;
+  }
+  .card-img-person {
+    width: 100px;
+    margin: 10px 0;
+  }
+  .card-img-l, .main-card-l {
+    width: 140px;
+  }
+  .appointments-popup {
+    min-width: unset;
+    margin: 0 5px;
+  }
+  .dropdown {
+    width: 100%;
+  }
+  .popup {
+    width: 95%;
+    padding: 20px;
+  }
+}
+@media (max-width: 540px) {
+  body {
+    // background: rgb(255, 131, 131);
+  }
+  .main__title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .accordion-content p {
+    font-size: 10px;
+  }
+  .menu-link__icon, .accordion-faq {
+    font-size: 12px;
+  }
+  .notification {
+    margin-left: auto;
+    margin-right: 15px;
+  }
+  .search-term {
+    padding: 10px;
+    padding-left: 35px;
+    font-size: 10px;
+
+    &::placeholder {
+      display: none;
+    }
+  }
+}

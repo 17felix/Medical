@@ -1,0 +1,53 @@
+
+// ========== Help ==========
+
+.accordion {
+  position: relative;
+  margin: 30px 0;
+  width: 90%;
+
+  
+  &:hover {
+    box-shadow:0 0 5px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  &__controll{
+    display: none;
+  }
+
+}
+
+.accordion-faq {
+  background: $cl--neutral-white;
+  color: $cl--neutral-gray-dark;
+  padding: 25px;
+  font-size: 22px;
+  border-bottom: 1px solid $cl--neutral-gray-divider;
+}
+.accordion-faq::before{
+  content:"+";
+  display: inline-block;
+  margin-right: 20px;
+}
+.accordion-faq{
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.accordion-content{
+  max-height:0px;
+  overflow: hidden;
+  transition:max-height 0.5s;
+  background-color: white;
+  box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+.accordion-content p {
+  padding: 30px;
+}
+input:checked ~ .accordion-faq::before{
+  content: "-";
+}
+input:checked ~ .accordion-content{
+  max-height:200px;
+}
